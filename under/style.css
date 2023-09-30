@@ -1,0 +1,349 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(212, 209, 209);
+    padding-top: 50px;
+}
+a{
+    text-decoration: none;
+}
+
+.main-width-div{
+    max-width: 1500px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.743);
+    height: 800px;
+    border-radius: 20px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.ilems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.ilems li , a{
+    list-style: none;
+    text-transform: capitalize;
+    color: rgb(141, 141, 141);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+}
+.ilems li:hover , .ilems a:hover{
+    color: rgb(255, 111, 0);
+}
+.ilems li:hover::after{
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 3px;
+    background-color: rgb(255, 111, 0);
+    bottom: -3px;
+    left: 0;
+    border-radius: 50px;
+    animation-name: animate;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes animate {
+    100%{
+        width: 100%;
+    }
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.login button{
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+    transition: all 0.5s;
+    border-radius: 50px;
+}
+.login button.btn1{
+    border: 2px solid silver;
+    color: rgb(124, 124, 124);
+    background-color: transparent;
+}
+.login button.btn1:hover{
+    background-color: rgb(235, 124, 39);
+    border: 2px solid rgb(235, 124, 39);
+    color: white;
+}
+.login button.btn2{
+    background-color: rgb(235, 124, 39);
+    border: 2px solid rgb(235, 124, 39);
+    color: white;
+}
+.login button.btn2:hover{
+    border: 2px solid silver;
+    color: rgb(124, 124, 124);
+    background-color: transparent;
+}
+
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* 
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+.div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+    position: relative;
+}
+
+
+
+.div-div1 h2{
+    font-size: 70px;
+    text-transform: capitalize;
+    font-weight: 900;
+    color: rgb(99, 99, 99);
+}
+
+.div-div1 h2 span{
+    color: rgb(235, 124, 39);
+}
+
+.div-div1 p{
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(114, 113, 113);
+    padding-top: 15px;
+}
+
+.btn-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.btn-div button{
+    outline: none;
+    border: none;
+    padding: 15px 20px;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(77, 77, 77);
+    border: 1px solid rgb(75, 75, 75);
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all 0.4s;
+}
+
+.btn-div button:hover{
+    background-color: rgb(235, 124, 39);
+    border: 1px solid rgb(235, 124, 39);
+    color: white;
+}
+
+
+.div-div1{
+    padding-top: 100px;
+}
+
+.div-div2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: anim 2s linear infinite;
+    position: absolute;
+    right: 100px;
+}
+.div-div2 img{
+    height: 500px;
+}
+
+@keyframes anim {
+    100%{
+        padding-top: 30px;
+        padding-right: 30px;
+    }
+}
+
+.div{
+    padding-top: 100px;
+}
+
+
+.main-bur{
+    display: none;
+}
+
+
+
+
+.hamburger{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.hamburger span{
+    height: 4px;
+    width: 30px;
+    background-color: black;
+    border-radius: 20px;
+    position: relative;
+}
+
+.hamburger:hover .burger-items{
+    display: block;
+}
+.burger-items{
+    position: absolute;
+    background-color: silver;
+    width: 100%;
+    right: 0;
+    top: 60px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    display: none;
+}
+
+.burger-items li.li{
+    list-style: none;
+    text-transform: capitalize;
+    color: rgb(141, 141, 141);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 5px;
+    width: 100%;
+}
+.burger-items li.li:hover{
+    color: rgb(255, 111, 0);
+    background-color: aquamarine;
+}
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+
+
+@media (max-width:1000px) {
+    .main-header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width:700px) {
+    .login{
+        display: none;
+    }
+    .main-header{
+        justify-content: space-between;
+    }
+}
+@media (max-width:500px) {
+    body{
+        padding-top: 0px;
+    }
+    .main-width-div{
+        border-radius: 0px;
+    }
+    a.home{
+        display: none;
+    }
+}
+
+@media (max-width:1100px) {
+    .div{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .div{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .div-div2{
+        top: 460px;
+    }
+    .div-div1{
+        padding-top: 0px;
+    }
+    .main-width-div{
+        height: 1060px;
+    }
+}
+@media (max-width:400px) {
+    .main-header{
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+    .ilems{
+        gap: 30px;
+    }
+}
+
+@media (max-width:500px) {
+    .div-div2{
+        right: 0px;
+    }
+}
